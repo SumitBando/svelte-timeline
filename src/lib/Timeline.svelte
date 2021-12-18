@@ -1,6 +1,17 @@
 <script>
   export let title = ''
-	export let events = [
+
+/**
+ * @typedef {Object} Event
+ * @property {string} title
+ * @property {string} [date]
+ * @property {string} [status]
+ */
+/**
+ * @type {Array<Event>}
+ */
+
+  export let events = [
 		{
 			title: 'Package Booked',
 			date: '21 July 2021, 04:30 PM',
