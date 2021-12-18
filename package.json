@@ -1,6 +1,8 @@
 {
   "name": "svelte-timeline",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "homepage": "https://github.com/SumitBando/svelte-timeline",
+  "repository": "github:SumitBando/svelte-timeline",
   "svelte": "index.js",
   "scripts": {
     "dev": "svelte-kit dev",
