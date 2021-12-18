@@ -13,21 +13,21 @@ npm i svelte-timeline
 In your route or component,
 ```
 <script>
-  import {Timeline} from 'svelte-timeline'
-	const events = [
-		{
-			title: 'Step1',
-      date: 'Dec 18, 2021',
-      status: 'success'      
-    },
-    {
-			title: 'Step2',
-      status: 'error'
-    },
-    {
-			title: 'Step3',
-    }
-  ]  
+ import {Timeline} from 'svelte-timeline'
+ const events = [
+  {
+   title: 'Step1',
+   date: 'Dec 18, 2021',
+   status: 'success'      
+  },
+  {
+   title: 'Step2',
+   status: 'error'
+  },
+  {
+   title: 'Step3',
+  }
+ ]  
 <script>
 
 <Timeline {events}/>
