@@ -1,8 +1,10 @@
 # What
 A Svelte Timeline component.
 This is what is looks like:
-![image info](./static/timeline-sample.png "Sample")
+![image info](https://github.com/SumitBando/svelte-timeline/raw/main/static/timeline-sample.png "Sample")
 
+Unfortunately, this has dependencies on TailwindCSS and FontAwesome.
+If time permits,will try to remove dependencies.
 
 Original Tailwind snippet was from: https://codepen.io/sheikh_ishaan/pen/oNWpgoK
 
