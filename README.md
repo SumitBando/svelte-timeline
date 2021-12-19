@@ -13,6 +13,7 @@ Original Tailwind snippet was from: https://codepen.io/sheikh_ishaan/pen/oNWpgoK
 npm i svelte-timeline
 ```
 
+To use, pass an array of Event objects, which has at least a title.
 ```code
 /**
  * @typedef {Object} Event
@@ -21,7 +22,6 @@ npm i svelte-timeline
  * @property {string} [status]
  */
  ```
-To use, pass an array of Event objects, which has at least a title.
 
 A date field, if passed, is shown.
 Though it is used to display a sequence of timed events, the component has no understanding of time, you can pass arbitary string in the date field, or even omit it.
@@ -33,6 +33,9 @@ For 'error', it is displayed with a background of bg-red-500, with a fa-times-ci
 
 If a status field is not included, it is displayed with a background of bg-gray-300, with text color of text-gray-400, with a fa-exclamation-circle icon.
 
+The above values are all props, and can be overridden.
+
+If the optional prop 'heading' is passed, it is displayed at top.
 
 In your route or component,
 ```
@@ -54,7 +57,7 @@ In your route or component,
  ]  
 <script>
 
-<Timeline {events}/>
+<Timeline {events} heading='Something'/>
 ```
 
 ## Developing

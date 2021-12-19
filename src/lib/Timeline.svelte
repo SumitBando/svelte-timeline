@@ -1,5 +1,17 @@
 <script>
-  export let title = ''
+  export let heading = ''
+
+  export let bgSuccess = 'bg-green-500'
+  export let bgError = 'bg-red-500'
+  export let bgDefault = 'bg-gray-300'
+
+  export let textSuccess = 'text-white'
+  export let textError = 'text-white'
+  export let textDefault = 'text-gray-400'
+
+  export let iconSuccess = 'fa-check-circle'
+  export let iconError = 'fa-times-circle'
+  export let iconDefault = 'fa-exclamation-circle'
 
 /**
  * @typedef {Object} Event
@@ -7,10 +19,10 @@
  * @property {string} [date]
  * @property {string} [status]
  */
-/**
+
+ /**
  * @type {Array<Event>}
  */
-
   export let events = [
 		{
 			title: 'Package Booked',
@@ -33,38 +45,39 @@
 	];
   const bgColor = (status) => { 
     switch (status) {
-      case 'success': return 'bg-green-500'
-      case 'error': return 'bg-red-500'
-      default: return 'bg-gray-300'
+      case 'success': return bgSuccess
+      case 'error': return bgError
+      default: return bgDefault
     }
   }
   const textColor = (status) => { 
     switch (status) {
-      case 'success': return 'text-white'
-      case 'error': return 'text-white'
-      default: return 'text-gray-400'
+      case 'success': return textSuccess
+      case 'error': return textError
+      default: return textDefault
     }
   }
   const icon = (status) => { 
     switch (status) {
-      case 'success': return 'fa-check-circle'
-      case 'error': return 'fa-times-circle'
-      default: return 'fa-exclamation-circle'
+      case 'success': return iconSuccess
+      case 'error': return iconError
+      default: return iconDefault
     }
   }
 </script>
+
 <svelte:head>
   <link
 	rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
 	integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-	crossorigin="anonymous"
-/>
+	crossorigin="anonymous"/>
 </svelte:head>
+
 <div class="bg-gray-50">
   <div class="p-4 mt-4">
-    {#if title}
-    <h1 class="text-4xl text-center font-semibold mb-6">{title}</h1>
+    {#if heading}
+    <h2 class="text-4xl text-center font-semibold mb-6">{heading}</h2>
     {/if}
     <div class="container">
       <div class="flex flex-col md:grid grid-cols-12 text-gray-50">

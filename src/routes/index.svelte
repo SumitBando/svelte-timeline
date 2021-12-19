@@ -15,4 +15,4 @@
     }
   ]
 </script>
-<Timeline/>
+<Timeline heading='My Title' {events}/>
