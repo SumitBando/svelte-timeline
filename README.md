@@ -3,7 +3,9 @@ A Svelte Timeline component.
 This is what is looks like:
 ![image info](https://github.com/SumitBando/svelte-timeline/raw/main/static/timeline-sample.png "Sample")
 
-If time permits, will try to remove dependencies.
+This component has dependency on Tailwind.
+It also has dependency on FontAwesome, which it injects.
+If time permits, will try to remove these dependencies.
 
 Original Tailwind snippet was from: https://codepen.io/sheikh_ishaan/pen/oNWpgoK
 
